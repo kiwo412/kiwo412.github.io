@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김민규 | Resume</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        color: #333333;
+        background-color: #f9fafb;
+        padding: 50px 20px;
+      }
+
+      .resume-container {
+        max-width: 700px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 50px 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+      }
+
+      header {
+        border-bottom: 2px solid #f3f4f6;
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+      }
+
+      .name {
+        font-size: 32px;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 10px;
+      }
+
+      .contact-info {
+        font-size: 15px;
+        color: #4b5563;
+      }
+
+      .contact-info span {
+        margin-right: 15px;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        font-size: 20px;
+        color: #1e3a8a;
+        border-left: 4px solid #1e3a8a;
+        padding-left: 12px;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+
+      p {
+        margin-bottom: 10px;
+        color: #4b5563;
+        font-size: 16px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      li {
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .item-title {
+        font-size: 17px;
+        font-weight: 600;
+        color: #111827;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+
+      .item-date {
+        font-size: 14px;
+        color: #9ca3af;
+        font-weight: 400;
+      }
+
+      .item-desc {
+        font-size: 15px;
+        color: #6b7280;
+        margin-top: 5px;
+      }
+
+      .project-box {
+        padding-left: 15px;
+        border-left: 2px solid #e5e7eb;
+        margin-top: 10px;
+      }
+
+      .project-item {
+        margin-bottom: 12px;
+      }
+
+      .project-badge {
+        font-size: 14px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background-color: #eff6ff;
+        padding: 2px 8px;
+        border-radius: 4px;
+      }
+
+      .project-name {
+        font-size: 15px;
+        font-weight: 600;
+        color: #111827;
+        margin-left: 5px;
+      }
+
+      .project-period {
+        font-size: 13px;
+        color: #9ca3af;
+        margin-left: 5px;
+      }
+
+      .project-detail {
+        font-size: 14px;
+        color: #6b7280;
+        margin: 4px 0 0 0;
+        padding-left: 5px;
+        line-height: 1.5;
+      }
+
+      .skill-category {
+        font-size: 15px;
+        font-weight: 600;
+        color: #4b5563;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 8px;
+      }
+
+      .badge-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .tech-badge {
+        display: inline-block;
+        background-color: #f3f4f6;
+        color: #1f2937;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 4px 12px;
+        border-radius: 6px;
+        border: 1px solid #e5e7eb;
+      }
+
+      .project-link {
+        display: inline-block;
+        margin-top: 8px;
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 15px;
+      }
+
+      .project-link:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 13px;
+        color: #9ca3af;
+        border-top: 1px solid #f3f4f6;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume-container">
+      <header>
+        <h1 class="name">4년차 개발자 김민규 입니다.</h1>
+        <div class="contact-info">
+          <span>📞 Tel: 010-4356-2582</span>
+          <span>✉️ Email: kiwo412@gmail.com</span><br />
+          <span>📍 주소: 서울시 영등포구 당산동 4가</span>
+        </div>
+      </header>
+
+      <section>
+        <h2>자기소개</h2>
+        <p>1.5인분 이상하는 풀스택 개발자를 지향합니다.</p>
+        <p>
+          Spring legacy 환경에서 SI 프로젝트를 수행하며 백엔드 안정성과 아키텍처
+          전환을 경험했습니다. 이에 안주하지 않고 기술적 스펙트럼을 넓히기 위해
+          지난 2년간 React, Spring Boot, JPA등을 활용한 개인 외주 작업을 진행해
+          왔습니다. <br />
+          레거시의 안정적 운영부터 트렌디한 기술을 활용한 풀스택 개발까지,
+          다양한 환경에서 다져온 빠른 적응력으로 팀의 생산성에 기여하겠습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>학력</h2>
+        <ul>
+          <li>
+            <div class="item-title">
+              <span>세명대학교 졸업</span>
+              <span class="item-date">2010. 03 ~ 2016. 02</span>
+            </div>
+            <p class="item-desc">컴퓨터 학부</p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>경력 (총 3년 5개월)</h2>
+        <ul>
+          <li style="margin-bottom: 35px">
+            <div class="item-title">
+              <span>이엘온 소프트</span>
+              <span class="item-date">2023-07 ~ 2023-12</span>
+            </div>
+            <p class="item-desc" style="margin-bottom: 12px">
+              - SI 프로젝트 개발
+            </p>
+
+            <div class="project-box">
+              <div class="project-item">
+                <span class="project-badge">Project</span>
+                <span class="project-name"
+                  >국회 도서관 운영관리 시스템 고도화</span
+                >
+                <span class="project-period">(2023-07 ~ 2023-12)</span>
+                <p class="project-detail">
+                  • jsp model1 방식으로 운영되던 시스템을 스프링으로 고도화<br />
+                  • jsp 파일 하나에 혼재 되어있던 로직과 화면단을 모든 화면에서
+                  분리해 mvc 패턴으로 전환<br />
+                  • poi를 이용한 엑셀 데이터 처리 공통 모듈 개발<br />
+                  • 카카오톡 및 메일링 스케쥴링 api 개발<br />
+                  • 개발환경: spring legacy, jsp, oracle, git, mybatis
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="item-title">
+              <span>아이엑세스</span>
+              <span class="item-date">2020-03 ~ 2023-01</span>
+            </div>
+            <p class="item-desc" style="margin-bottom: 12px">
+              - SI / SM 프로젝트 개발 및 운영
+            </p>
+
+            <div class="project-box">
+              <div class="project-item">
+                <span class="project-badge">Project</span>
+                <span class="project-name">대학정보공시 통합시스템 구축</span>
+                <span class="project-period">(2022-06 ~ 2022-12)</span>
+                <p class="project-detail">
+                  • 각 대학 관련 정보 화면 제작 <br />
+                  • 관리자 관리 통계 관련 메뉴 개발<br />
+                  • 개발환경 : spring legacy, jsp, oracle, svn, mybatis,
+                  exbuilder6, nexacro
+                </p>
+              </div>
+
+              <div class="project-item" style="margin-top: 15px">
+                <span class="project-badge">Project</span>
+                <span class="project-name"
+                  >지방재정 운영지원단 국고보조금 운영 및 개발</span
+                >
+                <span class="project-period">(2020-03 ~ 2022-06)</span>
+                <p class="project-detail">
+                  • 국고보조금 결제 프로세스 전반에 대한 개발 <br />
+                  • 타 기관과 연계되는 보조금 사업에 대한 프로시저 및 배치
+                  개발<br />
+                  • 지방재정 운영시스템 접속자 접속로그 시스템 설계 및 개발<br />
+                  • 개발환경 : spring legacy, spring batch, jsp, oracle, svn,
+                  mybatis, trustform, rexpert
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>자격증</h2>
+        <ul>
+          <li>
+            <div class="item-title">
+              <span>정보처리기사</span>
+              <span class="item-date">2015-05</span>
+            </div>
+            <p class="item-desc">한국산업인력공단</p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>스킬</h2>
+        <ul>
+          <li>
+            <div class="skill-category">Front-end</div>
+            <div class="badge-container">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Zustand</span>
+              <span class="tech-badge">TanStack Query</span>
+              <span class="tech-badge">React Hook Form</span>
+              <span class="tech-badge">jQuery</span>
+              <span class="tech-badge">Ajax</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-category">Back-end</div>
+            <div class="badge-container">
+              <span class="tech-badge">Spring Legacy</span>
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">JPA</span>
+              <span class="tech-badge">JSP</span>
+              <span class="tech-badge">Thymeleaf</span>
+              <span class="tech-badge">MyBatis</span>
+              <span class="tech-badge">Oracle</span>
+            </div>
+          </li>
+          <li>
+            <div class="skill-category">Etc</div>
+            <div class="badge-container">
+              <span class="tech-badge">eXbuilder6</span>
+              <span class="tech-badge">Rexpert</span>
+              <span class="tech-badge">Git</span>
+              <span class="tech-badge">SVN</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>개인 프로젝트</h2>
+        <ul>
+          <li>
+            <div class="item-title">
+              <span>짠돌넷</span>
+              <span class="item-date">2025-04 ~ 2025-05</span>
+            </div>
+            <p class="item-desc">
+              React와 spring boot를 이용한 개인 지출 절약 웹 서비스
+            </p>
+            <a
+              href="https://www.jjandol.net/"
+              class="project-link"
+              target="_blank"
+              >🔗 짠돌넷 (https://www.jjandol.net) </a
+            ><br />
+            <a href="jjandolnet/index.html" class="project-link" target="_blank"
+              >🔗 프로젝트 기술 명세 </a
+            ><br />
+            <a
+              href="https://api.jjandol.net/swagger-ui/index.html"
+              class="project-link"
+              target="_blank"
+              >🔗 api 명세서 (swagger)</a
+            ><br />
+            <a
+              href="https://github.com/kiwo412"
+              class="project-link"
+              target="_blank"
+              >🔗 github repository</a
+            >
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
